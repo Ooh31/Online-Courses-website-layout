@@ -1,0 +1,232 @@
+html, body {
+    font-family: Lato, sans-serif;
+    color: #424551;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/*---------------------------------------------------------------------*/
+
+.header {
+    font-weight: 700;
+    background: url('../images/decor/shapes-bg.svg') 50% 50% / cover no-repeat, linear-gradient(55.95deg, rgba(255, 63, 58, .2) 0%, rgba(247, 94, 5, .2) 100%);
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
+
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-logo {
+    margin-right: 60px;
+}
+
+
+.header__nav {
+    margin-right: auto;
+}
+.header__nav-list {
+    display: flex;
+
+}
+
+.header__nav-item {
+    margin-right: 40px;
+}
+
+.header__nav-item:last-child {
+    margin-right: 0;
+}
+
+.header__nav-link {
+    line-height: 1.6;
+    color: #424551;
+    white-space: nowrap;
+    transition: all .3s;
+}
+
+.header__nav-link:hover {
+    color: #ff3f3a;
+}
+
+.header__btn-box {
+    display: flex;
+    align-items: center;
+}
+
+.header__top-btn {
+    margin-right: 36px;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 52px;
+    padding: 0 40px;
+    color: #fff;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    white-space: nowrap;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+.button--empty {
+    background-image: none;
+    border-left: 2px solid #ff3f3a;
+    border-right: 2px solid #f75e05;
+    background-image: -webkit-linear-gradient(left, #ff3f3a, #f75e05), -webkit-linear-gradient(left, #ff3f3a, #f75e05);
+    background-image: linear-gradient(left, #ff3f3a, #f75e05), linear-gradient(left, #ff3f3a, #f75e05);
+    background-size: 100% 2px;
+    background-position: 0 100%, 0 0;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.button--empty span {
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__user-nav {
+    position: relative;
+    padding-left: 28px;
+}
+
+.header__user-nav::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    background: url(../images/icons/user-icon.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+
+.header__user-btn {
+    white-space: nowrap;
+    line-height: 1.6;
+    transition: all .3s;
+}
+
+.header__user-btn:hover {
+    color: #ff3f3a
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.header__body {
+    flex-grow: 1;
+}
+
+.header__body-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e212c;
+    margin: auto 0;
+}
+
+.header__content {
+    margin-right: 30px;
+}
+
+.header__play {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header__play svg {
+    margin-right: 16px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.header__play:hover svg {
+    box-shadow: 0 0 0 16px rgba(255, 63, 58, 0.12);
+}
+
+.header__title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    min-width: 500px;
+    margin-bottom: 60px;
+}
+
+.header__content-buttons {
+    display: flex;
+}
+
+.header__content-btn {
+    margin-right: 24px;
+}
+
+.header__content-btn:last-child {
+    margin-right: 0px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e212c;
+    margin-bottom: 80px;
+
+}
+
+.header__row>span {
+    background: #ff3f3a;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.header__row-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__row-item span {
+    font-weight: 900;
+    font-style: 46px;
+    line-height: 130%;
+    margin-right: 12px;
+}
+
